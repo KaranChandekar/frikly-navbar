@@ -156,3 +156,25 @@ ul.nav-links li.dropdown:hover .dropdown-content {
   background-color: #fff;
   color: #000;
 }
+
+@media (max-width: 500px) {
+  header {
+   flex-direction: column;
+   height: 140px;
+   padding-bottom: 20px;
+  }
+  header img {
+    width: 100px;
+  }
+  header .options {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  ul.navlinks {
+    flex-direction: column;
+    height: auto;
+  }
+}
