@@ -13,7 +13,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1350px;
+  max-width: 1300px;
   margin: auto;
   height: 70px;
 }
@@ -22,6 +22,11 @@ header {
   color: #22333b;
   margin: 0 10px;
   font-size: 14px;
+  border-bottom: 1px solid transparent;
+}
+
+.header-links a:hover {
+  border-bottom: 1px solid #22333b;
 }
 
 header .input-box {
@@ -58,6 +63,11 @@ header .options .option {
   gap: 5px;
   color: #22333b;
   font-size: 14px;
+  border-bottom: 1px solid transparent;
+}
+
+header .options .option:hover {
+  border-bottom: 1px solid #22333b;
 }
 
 li {
@@ -76,24 +86,26 @@ nav {
   background-color: #22333b;
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 
 ul.nav-links {
   display: flex;
   list-style: none;
-  gap: 60px;
+  gap: 50px;
 }
 
 ul.nav-links li a {
   color: white;
   text-decoration: none;
-  padding: 20px 10px;
-  /* border-bottom: 2px solid transparent; */
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 5px solid transparent;
 }
 
 ul.nav-links li .dropdown-link:hover {
   color: #c6ac8f;
-  /* border-bottom: 2px solid #C6AC8F; */
+  border-bottom: 5px solid #C6AC8F;
 }
 
 ul.nav-links li.dropdown:hover .dropdown-content {
@@ -121,13 +133,12 @@ ul.nav-links li.dropdown:hover .dropdown-content {
 .dropdown-content .dropdown-group a {
   color: #797979;
   font-size: 13px;
-  text-decoration: none;
   text-transform: capitalize;
   display: block;
   cursor: pointer;
   width: 100%;
   border-left: 3px solid transparent;
-  padding: 5px 10px;
+  padding: 4px 10px;
 }
 
 .dropdown-content .dropdown-group a:hover {
